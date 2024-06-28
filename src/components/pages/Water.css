@@ -1,0 +1,268 @@
+h2 {
+    text-align: center;
+font-size: 2rem;
+margin: 1.5rem 0;
+}
+
+section {
+padding: 2rem 1rem;
+}
+
+.water-heaters {
+background-color: #fff;
+}
+
+.water-heaters-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.heater-card {
+background-color: #f5f5f5;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 1.5rem;
+flex: 1;
+min-width: 300px;
+max-width: 500px;
+text-align: center;
+}
+
+.heater-card h3 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.heater-card p {
+font-size: 1rem;
+margin-bottom: 1.5rem;
+}
+
+.learn-more-btn {
+background-color: #1B3864;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+cursor: pointer;
+}
+
+.learn-more-btn:hover {
+background-color: #1B3864;
+}
+
+.water-heater-repair {
+background-color: #f2f2f2;
+text-align: center;
+}
+
+.water-heater-repair h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.water-heater-repair p {
+font-size: 1.25rem;
+max-width: 800px;
+margin: 0 auto 1.5rem;
+}
+
+.repair-btn {
+background-color: #1B3864;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+cursor: pointer;
+}
+
+.repair-btn:hover {
+background-color: #1B3864;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+h2 {
+    font-size: 1.75rem;
+}
+
+.heater-card h3 {
+    font-size: 1.25rem;
+}
+
+.heater-card p {
+    font-size: 0.875rem;
+}
+
+.learn-more-btn, .repair-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+}
+
+.water-heater-repair p {
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+h2 {
+    font-size: 1.5rem;
+}
+
+.heater-card h3 {
+    font-size: 1rem;
+}
+
+.heater-card p {
+    font-size: 0.75rem;
+}
+
+.learn-more-btn, .repair-btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+.water-heater-repair p {
+    font-size: 0.875rem;
+}
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    color: #666;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+.water-treatment {
+    background-color: #fff;
+    padding-bottom: 3rem;
+}
+
+.intro-text, .sub-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.water-treatment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.treatment-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.treatment-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.learn-more-btn {
+    background-color: #1B3864;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #1B3864;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .intro-text, .sub-text {
+        font-size: 0.875rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .treatment-card h4 {
+        font-size: 1rem;
+    }
+
+    .treatment-card p {
+        font-size: 0.875rem;
+    }
+
+    .learn-more-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text, .sub-text {
+        font-size: 0.75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .treatment-card h4 {
+        font-size: 0.875rem;
+    }
+
+    .treatment-card p {
+        font-size: 0.75rem;
+    }
+
+    .learn-more-btn {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+}

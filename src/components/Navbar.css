@@ -1,0 +1,215 @@
+.top-banner {
+  width: 100%;
+  background-color: #f00; /* Red background color */
+  text-align: center;
+  padding: 5px 0;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it is above other content */
+  animation: fadeInOut 2s infinite; /* Add the animation */
+  height: 40px;
+  position: sticky;
+}
+
+.banner-text {
+  color: white;
+  font-size: 1.4rem;
+  animation: moveText 10s linear infinite;
+}
+
+/* Keyframes for fading effect */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 40px;
+    z-index: 999;
+    box-shadow: 20px 20px 20px slategray;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100px;
+    width: auto;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    color: #1B3864;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon-img {
+    margin-bottom: 5px; 
+    height: 35px;
+    width: auto;
+  }
+  
+  .nav-links p {
+    margin: 0;
+  }
+  
+  .nav-links:hover {
+    background-color:Orange;
+    transition: all 0.2s ease-out;
+    color: white;
+  }
+  
+  .fa-bars, .fa-times {
+    color: black;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 1% auto;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #1B3864;
+    padding: 5px 5px;
+    border: 2px solid Orange;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile2 {
+    color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .nav-links-mobile:hover {
+    background: Orange;
+    color: #242424;
+    transition: 250ms;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar-container {
+      justify-content: space-between;
+    }
+  
+    .navbar-logo {
+      font-size: 1.5rem;
+      margin-left: 10px;
+    }
+  
+    .logo {
+      height: 90px;
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #f0f0f0;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-links:hover {
+      background-color: #000;
+      color: #fff;
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-logo {
+      font-size: 1.2rem;
+      margin-left: 5px;
+    }
+  
+    .logo {
+      height: 80px;
+    }
+  
+    .nav-menu {
+      height: 80vh;
+    }
+  
+    .menu-icon {
+      font-size: 1.5rem;
+    }
+  }
